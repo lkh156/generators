@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage One</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>New Force Creation</h1>
+
+    <form id="forceGenerator"> 
+        <label for="forceName">Name of Force: </label>
+        <input type="text" id="forceName" name="forceName"><br>
+        <select id="era"  onclick="forceEra()">
+            <option selected>Select Era of your Force</option>
+            <option>Fourth Succession War (3025-3049)</option>
+            <option>Clan Invasion (3050-3067)</option>
+            <option>Jihad (3068-3085)</option>
+            <option>Republic Era (3085-3130)</option>
+        </select><br>
+        <select id="Force-Type">
+            <option value="govermentForce">Goverment Force</option>
+            <option value="mercenaryForce">Mercenary Force</option>
+            <option value="pirateForce">Pirate Force</option>
+        </select><br>
+        <select id="affiliation">
+            <option>Select an Affiliation</option>
+        </select>
+        <div>
+          <span></span>
+        <input type=button onClick="parent.location='stageTwo.html'" value='Next Stage'>
+    </div>
+    </form> 
+
+    <p id="demo"></p>
+
+  </body>
+</html>
